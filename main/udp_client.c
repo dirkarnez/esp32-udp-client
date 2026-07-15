@@ -28,15 +28,16 @@
 #include "addr_from_stdin.h"
 #endif
 
-#if defined(CONFIG_EXAMPLE_IPV4)
-#define HOST_IP_ADDR CONFIG_EXAMPLE_IPV4_ADDR
-#elif defined(CONFIG_EXAMPLE_IPV6)
-#define HOST_IP_ADDR CONFIG_EXAMPLE_IPV6_ADDR
-#else
-#define HOST_IP_ADDR ""
-#endif
+// #if defined(CONFIG_EXAMPLE_IPV4)
+// #define HOST_IP_ADDR CONFIG_EXAMPLE_IPV4_ADDR
+// #elif defined(CONFIG_EXAMPLE_IPV6)
+// #define HOST_IP_ADDR CONFIG_EXAMPLE_IPV6_ADDR
+// #else
+#define HOST_IP_ADDR "10.6.127.92"
+// #endif
 
-#define PORT CONFIG_EXAMPLE_PORT
+// #define PORT "CONFIG_EXAMPLE_PORT"
+#define PORT "5000"
 
 static const char *TAG = "example";
 static const char *payload = "Message from ESP32 ";
